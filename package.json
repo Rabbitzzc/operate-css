@@ -1,0 +1,26 @@
+{
+    "name": "operate-css",
+    "version": "2.0.0",
+    "description": "Insert CSS into head, or insert CSS attributes into any element. ",
+    "main": "dist/dom.js",
+    "types": "dist/dom.d.ts",
+    "scripts": {
+        "build-fast": "tsup src/dom.ts --dts --format cjs,esm --minify",
+        "build": "yarn build-fast",
+        "watch": "tsup src/dom.ts --watch",
+        "build:types": "tsc --emitDeclarationOnly"
+    },
+    "repository": "https://github.com/ra-utility/operate-css.git",
+    "keywords": [
+        "insertCSS",
+        "insert",
+        "css",
+        "styleSheet"
+    ],
+    "author": "Rabbitzzc <zzclovelcs@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "tsup": "5.11.7",
+        "typescript": "4.0.2"
+    }
+}
